@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="website Icon" type="png" href="./logovv.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI CREATIVE.COM</title><link rel="stylesheet" href="./index.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+/*loader styling started */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+-webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;}
+
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+/*loader styling end*/
+
+
+.logo img{
+    width: 90px;
+    height: 55px;
+}
+.innavbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 15px;
+}
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    /* background-color: #00BFFF;  */
+    background-image: linear-gradient(rgba(0, 127, 177, 0.8),rgba(125, 186, 255, 0.8)),url(./laptop.jpg);
+    padding: 5px 0px; 
+    color: #fff; 
+    width: 100%;
+    position: fixed;
+    font-family: corbel;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+} 
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.nav-links li{
+    list-style-type: none;
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-family: corbel;
+    font-size: 1.2em;
+}
+.nav-links a:hover{
+    color: wheat;
+}
+.contact-btn{
+    padding: 10px;
+    color: white;
+    background:  #f58700;
+    border-radius: 5px;
+    position: relative;
+    bottom: 10px;
+    font-size: 0.9em;
+    border-color: wheat;
+    font-weight: bold;
+}
+.contact-btn:hover{
+    color: wheat;
+}
+
+.burger { 
+    display: none; 
+    flex-direction: column; 
+    cursor: pointer;     
+    transition: all 0.3s ease-in-out;
+} 
+.burger div { 
+    width: 40px; 
+    height: 6px; 
+    background-color: #fff; 
+    margin: 5px;
+    transition: all 0.3s ease-in-out; 
+    border-radius: 1px;     
+} 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #0099cc;
+  color: #ffffff;
+  padding: 15px;
+
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+.jobs{
+    padding-top: 180px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+@media screen and (max-width: 900px){
+    *{
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    .nav-links { 
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color:rgba(0, 127, 177, 0.8); 
+        width: 100%; 
+        top: 93px;
+        left: 0;
+        text-align: center;
+        z-index: 2;
+        padding-top: 190px;
+        margin: auto;
+        height: 100vh;
+        transition: 0.5s linear;
+        z-index: 1;
+        font-size: 1.2em;
+        opacity: 0.9;
+    }
+    .nav-links a { 
+        text-decoration: none; 
+        color: rgb(255, 255, 255); 
+        font-family: corbel;
+        text-align: center;
+        font-size: 1.5em;
+        opacity: 100;
+     
+    }  
+    .nav-links li  { 
+       padding-bottom: 30px;
+       color: white;
+     
+    }  
+    .contact-btn{
+        width: 300px;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    .navbar { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        background-color:rgb(1, 0, 43); 
+        color: rgb(255, 255, 255); 
+        width: 100%;
+        position: fixed;
+        box-shadow: 0px 0px 3px 1px white;
+        font-family: corbel;
+        z-index: 1;
+     
+    } 
+    .innavbar{
+        padding: 0;
+    }
+    .logo{
+        padding-top: 0;
+    }
+    .logo img{
+        width:100px;
+        height: 60px;
+    }
+    .nav-links.active { 
+        display: flex; 
+    } 
+    .burger { 
+        display: block; 
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        left: 0;
+      
+    }
+}
+    </style>
+</head>
+<body style="background-color:rgb(255, 255, 255);" onload="myFunction()" style="margin:0;">
+        <!-- loader started -->
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!-- loader end -->
+    <nav class="navbar"> 
+        <div class="innavbar">
+            <nav class="logo">
+                <img src="./hi logo.png" alt=""></nav>
+            <nav class="nav-links" id="navLinks"> 
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="#">JOBS</a></li>
+                <li><a href="Tel:08160528863"><button class="contact-btn">CONTACT US</button></a></li>
+            </nav> 
+        </div> 
+        <div class="burger" id="burger"> 
+            <div class="line1"></div> 
+            <div class="line2"></div> 
+            <div class="line3"></div> 
+        </div> 
+    </nav> 
+    <div class="jobs">
+        <div class="header">
+            <h1 style="font-size: 1.3em;">remote work Opportunity for Frrlancers</h1>
+          </div>
+          
+          <div class="row">
+            <div class="col-3 menu">
+              <ul>
+                <h1 style="font-size: 1.7em; 
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    color: dodgerblue;">Job Titles
+                </h1>
+                <a href="#" style="text-decoration: none;"><li>UIUX Design</li></a>
+                <a href="#" style="text-decoration: none;"><li>Graphic Design</li></a>
+                <a href="#" style="text-decoration: none;"><li>Web Design</li></a>
+                <a href="#" style="text-decoration: none;"><li>Software Developement</li></a>
+                <a href="#" style="text-decoration: none;"><li>Mobile app Developement</li></a>
+              </ul>
+            </div>
+          
+            <div class="col-6">
+              <h1>HI CREATIVE TECH</h1>
+              <p>Software Developer</p>
+            </div>
+          
+            <div class="col-3 right">
+              <div class="aside">
+                <h2>What?</h2>
+                <p>Chania is a city on the island of Crete.</p>
+                <h2>Where?</h2>
+                <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                <h2>How?</h2>
+                <p>You can reach Chania airport from all over Europe.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer">
+            <p>Resize the browser window to see how the content respond to the resizing.</p>
+          </div>
+          
+    </div>
+
+    <script>
+           const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('navLinks');
+        burger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+
+        function scrollToTop(){
+            window.scrollTo(0,0)
+        }
+        function myFunction() {
+        myVar = setTimeout(showPage, 1000);
+    }
+        function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
+    // var password;
+    //     var pass1="64393714";
+    //     password=prompt('Enter Password To View Page')
+    //     if(password==pass1)
+    //     alert('click ok to enter')
+    //     else{
+    //         window.location="http:www.sadik.com"
+    //     }
+    </script>
+</body>
